@@ -25,10 +25,16 @@ angular.module('starter', ['ionic'])
 
 .controller("myCtrl", function($scope){
 
-  $scope.myVar = "Example";
-
   $scope.$watch("myVar", function(newVal, oldVal){
     $scope.lastVar = oldVal;
-  });
+  })
+
+  $scope.Clean = function (){
+    $scope.lastVar = null;
+    $scope.myVar = null;
+    
+
+  }
+
 
 })

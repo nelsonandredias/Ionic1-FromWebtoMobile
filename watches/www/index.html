@@ -41,12 +41,13 @@
       <ion-content class="padding" ng-controller="myCtrl">
         <label class="item item-input">
         <span class="input-label">My Variable:</span>
-        <input type="text" ng-model="myVar">
+        <input type="text" ng-model="myVar" placeholder="Enter your message">
       </label>
-        <label class="item item-input">
-          <span class="input-label">Last Variable:</span>
-          <input type="text" ng-model="lastVar">
-        </label>
+      <label class="item item-input">
+        <span class="input-label">Last Variable:</span>
+        <input type="text" ng-model="lastVar">
+      </label>
+      <button class="button button-block button-energized button-large" ng-click="Clean()">Clean</button>
       </ion-content>
     </ion-pane>
   </body>
