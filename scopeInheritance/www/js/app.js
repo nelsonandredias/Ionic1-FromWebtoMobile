@@ -27,7 +27,7 @@ angular.module('app', ['ionic'])
   $scope.Reset = function (){
 
     $scope.msg = null;
-    alert("all input fields were empty");
+    alert("all input fields have been empty");
 
   }
 

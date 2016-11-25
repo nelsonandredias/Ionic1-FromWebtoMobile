@@ -32,9 +32,10 @@
     <!-- your app's js -->
     <script src="js/app.js"></script>
   </head>
-  <body ng-app="app"> // in order to work, we have to declare the controllers in app.js
-  <ion-pane>
-    <ion-content class="padding"  ng-controller="Ctrl">
+  <body ng-app="app">
+  <!-- in order to work, we have to declare the controllers in app.js -->
+  <ion-pane  >
+    <ion-content class="padding" ng-controller="Ctrl">
       <!-- There are no controllers here, we are on root scope -->
       <label class="item item-input">
         <span class="input-label">RootScope</span>
@@ -58,6 +59,7 @@
       </div>
       <button class="button button-block button-large button-balanced" ng-click="Reset()">Reset</button>
     </ion-content>
-    </ion-pane>
+    <!--<button class="button button-block button-large button-balanced" ng-click="Reset()">Reset</button>-->
+  </ion-pane>
   </body>
 </html>
